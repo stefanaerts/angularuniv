@@ -8,20 +8,14 @@ import {BrowserModule} from "@angular/platform-browser";
 
 @Component({
     selector: 'app',
-    template: `
- 
-        <div class="color-sample" [style.background]="'red'">
-        Color Sample</div>
-        
-        <button [disabled]="true">Disabled</button> 
-        
-        <input [required]="true" value="Hello World !">
-                
-        `
+    templateUrl: './app-template.html'
 })
 export class App {
 
-
+    onClick() {
+        alert("Hello !");
+        debugger;
+}
 }
 
 
