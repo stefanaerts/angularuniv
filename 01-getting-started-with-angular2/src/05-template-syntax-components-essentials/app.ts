@@ -10,24 +10,24 @@ import {ColorPreviewer} from "./color_previewer";
 
 @Component({
     selector: 'app',
-    templateUrl:'./app-template.html'
-    // template: `
+    // templateUrl:'./app-template.html'
+    template: `
 
-    //         <color-picker #picker [color]="color" (color)="color = $event">
-    //         </color-picker>
+             <color-picker #picker [color]="color" (color)="color = $event">
+             </color-picker>
 
-    //         <color-previewer #previewer [color]="color"></color-previewer>
+             <color-previewer #previewer [color]="color"></color-previewer>
 
-    //         <button (click)="picker.reset()">Reset</button>
-
-    //     `
+             <button (click)="picker.reset()">Reset</button>
+         `
 })
 export class App {
 
     color:string;
 
-
 }
+
+
 
 
 
