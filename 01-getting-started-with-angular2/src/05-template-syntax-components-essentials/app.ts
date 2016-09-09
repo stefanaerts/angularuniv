@@ -8,18 +8,19 @@ import {ColorPicker} from "./color_picker";
 import {ColorPreviewer} from "./color_previewer";
 
 
-@Component({ 
+@Component({
     selector: 'app',
-    template: `
-            
-            <color-picker #picker [color]="color" (color)="color = $event">  
-            </color-picker>
-                
-            <color-previewer #previewer [color]="color"></color-previewer>
-                
-            <button (click)="picker.reset()">Reset</button>
+    templateUrl:'./app-template.html'
+    // template: `
 
-        `
+    //         <color-picker #picker [color]="color" (color)="color = $event">
+    //         </color-picker>
+
+    //         <color-previewer #previewer [color]="color"></color-previewer>
+
+    //         <button (click)="picker.reset()">Reset</button>
+
+    //     `
 })
 export class App {
 
