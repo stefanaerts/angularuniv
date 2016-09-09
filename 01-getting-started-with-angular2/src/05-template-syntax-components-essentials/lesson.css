@@ -26,13 +26,14 @@
 }
 
 
-.color-sample-red {
-    background: #1976d2;
+.color-sample-blue {
+    /*background: #1976d2;*/
+    background: midnightblue;
 
 }
 
 
-.color-sample-blue {
+.color-sample-red {
     background: #b13138;
 }
 
