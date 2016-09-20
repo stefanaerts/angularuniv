@@ -1,5 +1,3 @@
-
-
 import {Component, Output, EventEmitter, Input} from "@angular/core";
 import {BLUE, RED} from "./constants";
 
@@ -8,7 +6,7 @@ import {BLUE, RED} from "./constants";
     selector: 'color-picker',
     template: `
 
-    <div class="color-title" [style.color]="'orange'">Pick a Color pls:</div>
+    <div class="color-title" [ngStyle]="{color:colorPick}">Pick a Color:</div>
 
     <div class="color-picker">
         <div class="color-sample color-sample-blue" (click)="choose('${BLUE}')"></div>
@@ -19,10 +17,10 @@ import {BLUE, RED} from "./constants";
 })
 export class ColorPicker {
 
-    @Input()
-    color: string;
+    @Input('colorPick')
+    colorPick:string;
 
-    @Output("color")
+    @Output('colorOut')
     colorOutput = new EventEmitter();
 
     choose(color) {

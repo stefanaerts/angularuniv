@@ -1,0 +1,6 @@
+<color-picker #picker [colorPick]="colorApp" (colorOut)="colorApp = $event">
+</color-picker>
+
+<color-previewer #previewer [colorPreview]="colorApp"></color-previewer>
+
+<button (click)="picker.reset()">Reset it nu</button>
